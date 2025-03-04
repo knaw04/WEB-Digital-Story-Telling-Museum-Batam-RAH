@@ -1,0 +1,49 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5e8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("../img/Jepang.png");
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d4a259;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.content p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}

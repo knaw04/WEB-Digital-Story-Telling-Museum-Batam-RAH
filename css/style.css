@@ -1,0 +1,1174 @@
+:root {
+  --primary: #4c3718;
+  --bg: #292012;
+  --secondary: #f4ca8d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  background-color: var(--bg);
+  color: #fff1db;
+  /* min-height: 2000px;*/
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: rgba(90, 62, 20, 0.849);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  width: 100px;
+  margin-right: 5px;
+}
+.navbar .navbar-nav a {
+  color: #fffbfb;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--secondary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--secondary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fec47d;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .content {
+  display: flex;
+  padding: 1.5rem;
+  max-width: 60rem;
+  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero .content h1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+  color: #fff1db;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  justify-content: center;
+}
+
+.rectangle {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 9px;
+  height: 200px;
+  position: relative;
+  left: 20px;
+  top: 150;
+  background: linear-gradient(180deg, #fff5e5 0%, #ae9166 52%, #f4ca8d 100%);
+}
+
+/* Slide 2 */
+.slide-2 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/slide-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.judul {
+  display: flex;
+  height: 85%;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.slide-2 .judul h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slide-2 .judul hr {
+  width: 50%;
+  border: 3px #f5c474 solid;
+  border-top: 2px;
+  width: 80%;
+  margin: 10px o;
+}
+
+.judul p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 45px;
+  max-width: 800px;
+}
+
+/* Slide 3 */
+.row {
+  height: auto;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.row .imgwrapper {
+  flex: 1;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.row .imgwrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.contentwrapper {
+  max-width: 600px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contentwrapper h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f5c474;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contentwrapper hr {
+  width: 80%;
+  border: 1px solid #dab988;
+  margin: 5px auto;
+}
+
+.contentwrapper p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+
+/* Slide 4 */
+.baris {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/slide_4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; /* Tambahkan padding untuk menghindari elemen terlalu rapat */
+}
+
+.konten {
+  max-width: 600px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.konten h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4c3718;
+  margin-bottom: 20px;
+  text-align: center; /* Pastikan judul juga rata kiri */
+}
+
+.konten hr {
+  width: 80%; /* Lebar garis */
+  border: 1px solid #4c3718; /* Warna garis */
+  margin: 5px auto; /* Jarak garis dengan elemen lain */
+}
+.konten p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4c3718;
+  margin-bottom: 20px;
+  text-align: justify; /* Pastikan paragraf juga rata kiri */
+}
+
+/* Section 5 */
+.baris1 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/masa-riau-lingga.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20%;
+}
+
+.konten1 {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: -100px;
+}
+
+.konten1 h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #dab988;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.konten1 hr {
+  width: 80%;
+  border: 1px solid #dab988;
+  margin: 5px auto;
+}
+
+.konten1 p {
+  text-align: justify;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: #fff1db;
+  margin-bottom: 20px;
+  max-width: none;
+  width: 100%;
+}
+
+/* Slide 6 */
+.slide-6 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.slide-6 .image-slide {
+  overflow: hidden;
+}
+
+.slide-6 .image-slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.image-text {
+  max-width: 600px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.image-text hr {
+  width: 80%;
+  border: 1px solid #dab988;
+  margin: 5px auto;
+}
+
+.image-text p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+
+/* Slide 7 */
+.slide-7 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/masa\ raja\ isa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+.gambar {
+  flex: 1;
+  min-width: 350px;
+  padding: 10px;
+}
+
+.gambar img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+.content {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #fff1db;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content hr {
+  width: 80%;
+  border: 1px solid #4c3718;
+  margin: 5px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-bottom: 15px;
+}
+
+/* Slide 8 */
+.slide-8 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/Belanda.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.konten2 {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.konten2 h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #fff1db;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.konten2 hr {
+  width: 50%;
+  border: 1px solid #f6e5cb;
+  margin: 5px auto;
+}
+
+.konten2 p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+}
+
+/* Slide 9 */
+.slide-9 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/Jepang.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.konten3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  color: #fff;
+}
+
+.text {
+  max-width: 600px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text hr {
+  width: 100%;
+  border: 1px solid #f2c66d;
+  margin: 5px auto;
+}
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.konten3 .image {
+  flex: 0 0 40%; /* Atur lebar gambar */
+  text-align: center;
+}
+
+.konten3 .image img {
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+audio {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Slide 10 */
+.slide-10 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/kemerdekaan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.konten4 {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.konten4 h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #fff1db;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.konten4 hr {
+  width: 50%;
+  border: 1px solid #f4ca8d;
+  margin: 5px auto;
+}
+
+.konten4 p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+}
+
+/* Slide 11 */
+.slide-11 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/masa-kemerdekaan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.konten5 {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
+  display: flex;
+}
+
+.konten5 h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #fff1db;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.konten5 hr {
+  width: 50%;
+  border: 1px solid #f6e5cb;
+  margin: 5px auto;
+}
+
+.konten5 p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+}
+
+.image11 {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.image11 img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide 12 */
+.slide-12 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/Slide-12.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.text-box {
+  flex: 2;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 600px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.text-box h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #fec47d;
+  margin-bottom: 15px;
+}
+
+.text-box hr {
+  width: 50%;
+  border: 1px solid #fec47d;
+  margin: 5px auto;
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+  color: #f2c66d;
+}
+
+.text-box audio {
+  margin-top: 20px;
+  display: block;
+}
+
+/* Slide 13 */
+.slide-13 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/jembatan-barelang.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.picture-box {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.picture-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0 0, 0, 0.2);
+}
+
+.text-content {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.text-content h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #4a2e00;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-content hr {
+  width: 50%;
+  border: 1px solid #f6e5cb;
+  margin: 5px auto;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: #f6e5cb;
+}
+
+/* Slide 14 */
+.slide-14 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/masa-pemerintahan-lama.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  padding: 5%;
+}
+
+.text-content1 {
+  flex: 2;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.text-content1 h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #f2c66d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-content1 hr {
+  width: 50%;
+  border: 1px solid #f2c66d;
+  margin: 5px auto;
+}
+
+.text-content1 p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: #f6e5cb;
+}
+
+/* Slide 15 */
+.slide-15 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.slide-15 .image-slide {
+  overflow: hidden;
+}
+
+.slide-15 .image-slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-right: 10px;
+}
+
+.image-text {
+  max-width: 600px;
+  padding-left: 10px; /* Menambah ruang di kiri teks */
+}
+
+.image-text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.image-text hr {
+  width: 80%;
+  border: 1px solid #dab988;
+  margin: 5px auto;
+}
+
+.image-text p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+
+/* Slide 16 */
+.slide-16 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: #f4ca8d;
+}
+
+.slide-16 .image-wrapper {
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-right: 10px;
+}
+
+.text-wrapper {
+  max-width: 600px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #4c3718;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-wrapper hr {
+  width: 80%;
+  border: 1px solid #292012;
+  margin: 5px auto;
+}
+
+.text-wrapper p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  color: #4c3718;
+}
+
+/* Slide 17 */
+.slide-17 {
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: #292012;
+}
+
+.image-frame {
+  overflow: hidden;
+}
+
+.image-frame img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-right: 10px;
+}
+
+.text-frame {
+  max-width: 600px;
+  padding-left: 10px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.text-frame h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f4ca8d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-frame hr {
+  width: 80%;
+  border: 1px solid;
+  margin: 5px auto;
+}
+
+.text-frame p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+  color: #f6e5cb;
+}
+
+/* Footer Section */
+footer {
+  background-color: #f2c66d;
+  padding: 10px;
+  text-align: center;
+  color: #4a2e00;
+}
+.footer img {
+  max-width: 250px; /* Pastikan tidak terlalu kecil */
+  width: 100%; /* Biarkan menyesuaikan ukuran parent */
+  height: auto; /* Menjaga aspek rasio */
+  display: block;
+  margin: 0 auto;
+}
+
+footer .footer-section {
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 1%;
+}
+footer .footer-section h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+footer .footer-section p,
+footer .footer-section a {
+  font-size: 12px;
+  color: #4a2e00;
+  text-decoration: none;
+}
+footer .footer-section a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+/* media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fffbfb;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .slide-2 .judul h2 {
+    font-size: 2em; /* Ukuran font lebih kecil */
+  }
+  .judul p {
+    font-size: 1.2em;
+    line-height: 40px; /* Sesuaikan jarak antar baris */
+    max-width: 90%; /* Lebar paragraf menyesuaikan layar */
+  }
+  .slide-2 .judul hr {
+    width: 70%; /* Kurangi lebar garis */
+  }
+
+  /* slide 3*/
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .contentwrapper h2 {
+      font-size: 22px;
+    }
+
+    .contentwrapper p {
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .footer-section img {
+    width: 70%;
+    max-width: 200px;
+  }
+}
+/* Mobile Phone */
+@media screen and (max-width: 415px) {
+  .hero .slide-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.row {
+  flex-direction: column; /* Susun elemen secara vertikal */
+  margin: 5px; /* Kurangi margin */
+}
+
+.imgwrapper {
+  flex: 1 1 100%; /* Pastikan elemen imgwrapper mengambil lebar penuh */
+  text-align: center; /* Pusatkan isi elemen */
+  margin-bottom: 15px; /* Tambahkan jarak bawah */
+}
+
+.imgwrapper img {
+  width: 100%; /* Gambar mengambil lebar penuh kontainernya */
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.contentwrapper {
+  flex: 1 1 100%; /* Konten juga mengambil lebar penuh */
+  padding: 5px; /* Kurangi padding */
+}
