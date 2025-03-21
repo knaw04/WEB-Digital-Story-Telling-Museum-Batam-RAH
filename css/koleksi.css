@@ -178,6 +178,17 @@ body {
   color: #4a3b2f;
 }
 
+button {
+  background: none; /* Menghilangkan background */
+  background-color: transparent; /* Memastikan tetap transparan */
+  border: none; /* Menghilangkan border */
+  color: inherit; /* Menggunakan warna teks default */
+  font-size: inherit; /* Menyesuaikan ukuran teks */
+  cursor: pointer; /* Menjaga tampilan kursor agar tetap klik-able */
+  padding: 0; /* Menghindari padding bawaan */
+  color: #f4ca8d;
+}
+
 /* Footer Section */
 footer {
   background-color: #f2c66d;

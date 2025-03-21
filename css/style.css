@@ -716,14 +716,16 @@ audio {
 
 .text-box p {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.6;
+  font-weight: 600;
   padding-bottom: 25px;
   text-align: justify;
   margin-bottom: 15px;
   margin: 0 auto;
   max-width: 800px;
   padding-bottom: 15px;
-  color: #f2c66d;
+  color: #f5deb3;
+  text-shadow: 1px 1px 3px rgba(57, 40, 6, 0.887);
 }
 
 .text-box audio {
